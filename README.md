@@ -42,13 +42,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import reFilenamePosix from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-filename-posix@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/regexp-filename-posix/tags). For example,
+
+```javascript
 import reFilenamePosix from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-filename-posix@v0.1.0-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { REGEXP } from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-filename-posix@v0.1.0-esm/index.mjs';
+import { REGEXP } from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-filename-posix@esm/index.mjs';
 ```
 
 #### reFilenamePosix()
@@ -136,7 +141,7 @@ var parts = reFilenamePosix.REGEXP.exec( '/foo/bar/index.js' ).slice();
 <body>
 <script type="module">
 
-import reFilenamePosix from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-filename-posix@v0.1.0-esm/index.mjs';
+import reFilenamePosix from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-filename-posix@esm/index.mjs';
 
 var RE_FILENAME_POSIX = reFilenamePosix();
 var parts = RE_FILENAME_POSIX.exec( 'index.js' ).slice();
